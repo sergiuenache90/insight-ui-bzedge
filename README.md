@@ -20,7 +20,7 @@ cd bin
 ./bitcore-node create mynode
 cd mynode
 git clone https://github.com/BZEdge/insight-api-bzedge.git
-git clone https://github.com/BZEdge/insight-api-bzedge.git
+git clone https://github.com/BZEdge/insight-ui-bzedge.git
 ../bitcore-node install insight-api-bzedge
 ../bitcore-node install insight-ui-bzedge
 ../bitcore-node start
