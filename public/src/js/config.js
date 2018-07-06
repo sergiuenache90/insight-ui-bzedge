@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: 'views/block.html',
-      title: 'Zcash Block '
+      title: 'Bzedge Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -17,7 +17,7 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: 'views/transaction.html',
-      title: 'Zcash Transaction '
+      title: 'Bzedge Transaction '
     }).
     when('/', {
       templateUrl: 'views/index.html',
@@ -25,15 +25,15 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/blocks', {
       templateUrl: 'views/block_list.html',
-      title: 'Zcash Blocks solved Today'
+      title: 'Bzedge Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: 'views/block_list.html',
-      title: 'Zcash Blocks solved '
+      title: 'Bzedge Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: 'views/address.html',
-      title: 'Zcash Address '
+      title: 'Bzedge Address '
     }).
     when('/charts/:chartType?', {
       templateUrl: 'views/charts.html',
