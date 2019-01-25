@@ -64,21 +64,25 @@
         <p translate><strong>insight</strong>  is an <a href="https://insight.is/"
           target="_blank">open-source BZEdge blockchain explorer</a> with complete REST and websocket APIs that can be used for writing web wallets and other apps  that need more advanced blockchain queries than provided by zcashd RPC.  Check out the <a href="https://github.com/renuzit/insight-ui-btcz" target="_blank">source code</a>.</p>
           <p translate><strong>Message</strong> 
-          To display your pool under 'Mined By' please edit your Z-NOMP hex string in:</span>
+          To display your pool under 'Mined By' please edit your S-NOMP hex string in:</span>
         </p>
-        <pre>/z-nomp/node_modules/stratum-pool/lib/transactions.js</pre>
+        <pre>/s-nomp/config.json</pre>
         <p translate>Find:</p>
-        <pre><code>Buffer('5a2d4e4f4d50212068747470733a2f2f6769746875622e636f6d2f6a6f7368756179616275742f7a2d6e6f6d70', 'hex')]); //Z-NOMP!</code></pre>
+        <pre><code>
+    "defaultPoolConfigs": {
+        ...
+	"poolHex": "457175694875622068747470733A2F2F627A656467652E657175696875622E70726F"
+    },</code></pre>
         <p translate>
-          HEX encode a string containing the name of your pool and the URL and replace the above with your own HEX string. The encoded string should be of the following format:<pre>YourPoolName https://your.pool.url</pre>Then submit your HEX string to <em>#pool-operators</em> in #pools on the BZedge Discord server.
+	HEX encode a string containing the name of your pool and the URL and replace the above with your own HEX string. The encoded string should be of the following format:<pre>YourPoolName https://your.pool.url</pre>Then submit your HEX string to <em>#pools</em> on the BZedge Discord server.
         </p>
-        <p>Choose an explorer close to your to your location for best performance. 
+        <p>Choose an explorer close to your location for best performance. 
           <ul>
             <li><a href="https://explorer.bzedge.org/">Europe</a></li>
             <li><a href="https://america.bzedge.org/">America</a></li>
             <li><a href="https://australasia.bzedge.org/">Australia / Asia</a></li>
           </ul>
-          <p data-ng-if='currency.testnet'><strong>This explorer is currently showing testnet Zcash!</strong></p>
+          <p data-ng-if='currency.testnet'><strong>This explorer is currently showing testnet BZEdge!</strong></p>
 
         </div> <!-- END OF COL-3 -->
       </div>
